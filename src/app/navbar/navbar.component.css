@@ -1,5 +1,5 @@
 li{
-    margin-left:40px; 
+    margin-right:40px; 
     font-size: 20px;
     color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
@@ -12,12 +12,17 @@ li{
     width: 100px;
     height: 0%;
     transition: all 0.3s ease;
-    top: 100%;
+    top: 70%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   }
   
   .menu4 li:hover::after {
     width: 100px;
-    top: 10px;
+    top: 30px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  }
+  .logo{
+    margin-top: 10px;
+    width: 120px;
+    height: 60px;
   }
