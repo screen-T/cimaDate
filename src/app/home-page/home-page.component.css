@@ -1,7 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 .home {
     width: 100%;
     height: 100vh;
     background-image: url(https://images.squarespace-cdn.com/content/v1/5f8df8738079532ad2152028/4a9da446-e91a-451c-af3b-7e215fb931f1/2023CRSC.jpg?format=2500w);
     background-position: center top;
-	background-size:cover;
-}
+    background-size: cover;
+  }
+  
+  
+  .welcome {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 40px;
+    font-family: 'DM Serif Display', serif;
+  }
+  
+  .sous-titre {
+    position: absolute;
+    top: calc(40% + 10px); 
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 20px;
+    font-family: 'DM Serif Display', serif;
+  }
