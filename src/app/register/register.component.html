@@ -1,0 +1,36 @@
+<div class="bg">
+    <div class="cont">
+    <div class="container">
+    <div class="row content">
+        <div class="col-md-6 d-none d-md-block">
+            <img src="https://static-cse.canva.com/blob/891898/Green-Screen.jpg"  class="img-fluid image" alt="">
+        </div>
+        <div class="col-md-6">
+            <h3 class="signin-text mb-3"> Welcome in our family !</h3>
+        <h3 class="signin-text mb-3"> Register from here </h3>
+        <form>
+            <div class="form-group input-position">
+            <label for="email">Name</label>
+            <input type="text" [(ngModel)]="userInfo.name" name="username" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="email">last name</label>
+                <input type="text"  [(ngModel)]="userInfo.lastname"  name="lastname" class="form-control">
+                </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email"  [(ngModel)]="userInfo.email"  name="email" class="form-control">
+                </div>
+               
+            <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password"  [(ngModel)]="userInfo.password"  name="password" class="form-control">
+            </div>
+            
+            <button class="btn btn-class">Register</button>
+        </form>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
