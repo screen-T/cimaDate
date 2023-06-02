@@ -6,8 +6,6 @@
     background-position: center top;
     background-size: cover;
   }
-  
-  
   .welcome {
     position: absolute;
     top: 40%;
@@ -17,7 +15,26 @@
     font-size: 40px;
     font-family: 'DM Serif Display', serif;
   }
-  
+  .rechercher {
+    position: absolute;
+    top: calc(20% + 500px); 
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    border-width: 0;
+    background-color: white;
+    padding: 30px;
+    width: 150%;
+  }
+  .icon {
+    padding-left: 30px;
+    background: url("https://static.thenounproject.com/png/101791-200.png")
+      no-repeat left;
+    background-position: 90%;
+    background-size: 20px;
+    background-color: white;
+    margin-right: 0px;
+  }
   .sous-titre {
     position: absolute;
     top: calc(40% + 10px); 
