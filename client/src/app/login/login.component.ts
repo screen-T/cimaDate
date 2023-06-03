@@ -13,7 +13,9 @@ export class LoginComponent {
   email:"",
   password:""
  }
-
+  valid=false
+  count=0
+  error : any = ""
   login() {
     this.http.login(this.userInfo).subscribe((res:any)=>{
       console.log(res)
@@ -21,7 +23,10 @@ export class LoginComponent {
       this.router.navigate(['/']);
       
     },err=>{
-      console.log(err)
+      this.count=1
+      this.error=err.error
+      console.log(err.error)
+      
     })
  }
  

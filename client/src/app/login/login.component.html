@@ -8,22 +8,27 @@
         <div class="col-md-6">
             <h3 class="signin-text mb-3"> Welcome in our family !</h3>
         <h3 class="signin-text mb-3"> Register from here </h3>
-        <form>
+        <form class="needs-validation">
             
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email"  [(ngModel)]="userInfo.email"  name="email" class="form-control">
+               
+                  
                 </div>
                
             <div class="form-group">
             <label for="password">Password</label>
             <input type="password"  [(ngModel)]="userInfo.password"  name="password" class="form-control">
-            </div>
+            <div class="text text-danger">
+                {{error}}
+            </div>    
+        </div>
             <div>
                 You are new ? <a routerLink="/register"> Register</a> <br>
             </div>
-          <a routerLink="/"> <button class="btn btn-class" (click)="login()" >Login</button></a>
-            
+          <button class="btn btn-class" (click)="login()" >Login</button>
+         
         </form>
         
     
