@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { SharedService } from '../shared.service';
 
 @Component({
@@ -7,18 +8,18 @@ import { SharedService } from '../shared.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  constructor(private http:SharedService){}
+  constructor(private http:SharedService , private router:Router){}
  userInfo={
   email:"",
   password:""
  }
- userName=""
+
   login() {
     this.http.login(this.userInfo).subscribe((res:any)=>{
       console.log(res)
       sessionStorage.setItem('token',res.tokens);
+      this.router.navigate(['/']);
       
-      console.log(this.userName)
     },err=>{
       console.log(err)
     })
