@@ -9,14 +9,7 @@
             <h3 class="signin-text mb-3"> Welcome in our family !</h3>
         <h3 class="signin-text mb-3"> Register from here </h3>
         <form>
-            <div class="form-group input-position">
-            <label for="email">Name</label>
-            <input type="text" [(ngModel)]="userInfo.name" name="username" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="email">last name</label>
-                <input type="text"  [(ngModel)]="userInfo.lastname"  name="lastname" class="form-control">
-                </div>
+            
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email"  [(ngModel)]="userInfo.email"  name="email" class="form-control">
@@ -27,10 +20,13 @@
             <input type="password"  [(ngModel)]="userInfo.password"  name="password" class="form-control">
             </div>
             <div>
-                You already have an account ? <a routerLink="/login"> login</a> <br>
+                You are new ? <a routerLink="/register"> Register</a> <br>
             </div>
-            <button class="btn btn-class" (click)="ajout()">Register</button>   
+            <button class="btn btn-class" (click)="login()">Login</button>
+            
         </form>
+        
+    
     </div>
 </div>
 </div>

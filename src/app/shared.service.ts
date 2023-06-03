@@ -12,5 +12,8 @@ export class SharedService {
   register(userInfo : any){
     return this.http.post(this.url1 + 'user/register',userInfo );
   }
+  login(userInfo : any){
+    return this.http.post(this.url1 + 'user/login',userInfo )
+  }
   
 }
