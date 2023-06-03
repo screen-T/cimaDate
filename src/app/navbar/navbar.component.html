@@ -20,9 +20,21 @@
         <li class="nav-item">
             <a class="nav-link" routerLink="#">Contact us</a>
         </li>
+        <div *ngIf="!token">
         <li class="nav-item">
           <a class="nav-link" routerLink="/register">login/register</a>
         </li>
+      </div>
+        <div *ngIf="token">
+          <li  class="nav-item">
+            <a class="nav-link" routerLink="/">{{userName}}</a>
+          </li>
+        </div>
+        <div *ngIf="token">
+          <li  class="nav-item">
+            <button class="btn nav-link" (click)="logout()">logout</button>
+          </li>
+        </div>
       </ul>
     </div>
   </nav>
