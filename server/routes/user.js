@@ -25,7 +25,7 @@ router.post("/register", async (request , response)=>{
             "message" : "error in adding the new user",
             "error": error
         }
-        response.status(400).send(status)
+        response.status(401).send(status)
     }
 })
 
