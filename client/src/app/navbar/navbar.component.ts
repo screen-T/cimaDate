@@ -15,6 +15,7 @@ export class NavbarComponent implements OnInit{
   }
   userName=""
   ngOnInit(): void {
+    if(this.token)
     this.userName = this.getUserNameFromToken(this.token)
   }
   
