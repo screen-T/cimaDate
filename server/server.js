@@ -9,10 +9,6 @@ create an account, as well as being able to upload files and photos for products
 
 
 */ 
-
-
-
-
 const { response } = require('express');
 const express = require('express') ;
 const app = express() ; 
@@ -21,9 +17,6 @@ const userRouter =require ('./routes/user')
 const cors = require('cors');
 app.use(cors());
 require("./config/connect")
-
-
-
 app.use(express.json())
 app.use('/product', productRouter)
 app.use("/user",userRouter)
