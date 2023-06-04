@@ -21,7 +21,7 @@ export class NavbarComponent implements OnInit{
   
   logout(){
     sessionStorage.removeItem('token')
-    this.location.go(this.location.path());
+    window.location.reload();
   }
   getUserNameFromToken(token: any): string {
     const tokenPayload = token.split('.')[1];
