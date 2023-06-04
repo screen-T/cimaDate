@@ -9,16 +9,26 @@ router.post("/register", async (request , response)=>{
     try{
         console.log("adding user")
         data = request.body ;
-        var user = new User(data) ;
-        salt = bcrypt.genSaltSync(5)
-        password= await bcrypt.hashSync(data.password , salt)
-        user.password= password
-        var userInfo= await user.save() 
-        var status  = {
-            "message" : "user added successfully",
-            "userInfo": userInfo
+        if(data.name =='' || data.lastname =='' || data.email =='' || data.password==''){
+            response.status(401).send("you left empty filds")
+        }else{
+            email=User.findOne({email:data.email})
+            if (!email){
+                var user = new User(data) ;
+                salt = bcrypt.genSaltSync(5)
+                password= await bcrypt.hashSync(data.password , salt)
+                user.password= password
+                var userInfo= await user.save() 
+                var status  = {
+                    "message" : "user added successfully",
+                    "userInfo": userInfo
+            }
+            response.status(200).send(status)
         } 
-        response.status(200).send(status)
+        else{
+            response.status(409).send("email already exist !")
+        }     
+        }     
     }
     catch (error) {
         var status = {
