@@ -17,13 +17,15 @@ userInfo={
   email:"", 
   password:""
 }
+error=""
 ajout(){
   this.server.register(this.userInfo).subscribe((res)=>{
     console.log(res)
     this.router.navigate(['/']);
   },
   error=>{
-    console.log(error)
+    this.error=error.error
+    console.log(error , error.error)
   }
   )
 }
