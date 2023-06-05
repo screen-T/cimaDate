@@ -1,9 +1,11 @@
-/* https://cdn2.hubspot.net/hubfs/3939562/Imported_Blog_Media/img.png */
+/* 
 .home {
     width: 100%;
     height: 100vh;
     background-image: url(https://i.pinimg.com/originals/31/45/95/314595e998f1dc25ae30a1ac79fe9537.jpg);
-    background-position: center top;
+    background-position: center top ;
     background-size: cover;
-  }
+    background-attachment: fixed;
+}
 
+ */
