@@ -1,46 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 .home {
+    position: absolute;
     width: 100%;
     height: 100vh;
     background-image: url(https://images.squarespace-cdn.com/content/v1/5f8df8738079532ad2152028/4a9da446-e91a-451c-af3b-7e215fb931f1/2023CRSC.jpg?format=2500w);
     background-position: center top;
     background-size: cover;
   }
-  .welcome {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 40px;
-    font-family: 'DM Serif Display', serif;
-  }
-  .rechercher {
-    position: absolute;
-    top: calc(20% + 500px); 
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 10px;
-    border-width: 0;
-    background-color: white;
-    padding: 30px;
-    width: 150%;
-  }
-  .icon {
-    padding-left: 30px;
-    background: url("https://static.thenounproject.com/png/101791-200.png")
-      no-repeat left;
-    background-position: 90%;
-    background-size: 20px;
-    background-color: white;
-    margin-right: 0px;
-  }
-  .sous-titre {
-    position: absolute;
-    top: calc(40% + 10px); 
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-    font-size: 20px;
-    font-family: 'DM Serif Display', serif;
-  }
+.welcome {
+  margin-top: 60%;
+  color: #fff;
+  font-size: 40px;
+  font-family: 'DM Serif Display', serif;
+}
+.rechercher {
+  /* position: absolute; */
+  margin-top: 5%;
+  border-radius: 10px;
+  border-width: 0;
+  background-color: white;
+  padding: 30px;
+  width: 93%;
+}
+.icon {
+  padding-left: 30px;
+  background: url("https://static.thenounproject.com/png/101791-200.png")
+    no-repeat left;
+  background-position: 90%;
+  background-size: 20px;
+  background-color: white;
+  margin-right: 0px;
+}
+.sous-titre {
+  /* position: absolute; */
+  color: #fff;
+  font-size: 20px;
+  font-family: 'DM Serif Display', serif;
+}
+.content{
+ 
+}
