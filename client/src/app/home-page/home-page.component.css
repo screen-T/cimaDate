@@ -40,3 +40,19 @@
 .content{
   margin-top: 0%;
 }
+.title{
+  font-size: 27px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.product-slider {
+  width: 100%;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.slide h3, .slide p {
+  text-align: center;
+}
